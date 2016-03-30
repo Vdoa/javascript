@@ -1,4 +1,4 @@
-var prviArray = [1,5,6,10];
+var prviArray = [1,5,6,10,5];
 var drugiArray = [5,10,12,2,21];
 
 var dupli = function (ar1,ar2) {
@@ -16,18 +16,20 @@ return ar3;
 
 //console.log(nadjiduple);
 var unija = function (Array1,Array2){
-	var nadjiduple = dupli(Array1,Array2);
+	var nadjiduple = dupli(Array1,Array2); // ova poziva ovu gore koja će naći duple u ova dva arry-a -> [5,10]
 	//console.log(nadjiduple)
-	for (cnt =0; cnt<nadjiduple.length; cnt++){
-		Array1.splice(Array1.indexOf(nadjiduple[cnt]),1); //pronalazi index po vrijednosti u array-u
-	    Array2.splice(Array2.indexOf(nadjiduple[cnt]),1);
+	for (cnt =0; cnt<nadjiduple.length; cnt++){ // kad nadje duple to će biti array određene dužine.
+		Array1.splice(Array1.indexOf(nadjiduple[cnt]),1); //briše(splice) ali kad nađe index od prvo broja 5 u prvom array pa 10-naredba .indexOf(5) će naći index petice
+	    Array2.splice(Array2.indexOf(nadjiduple[cnt]),1); //briše(splice) ali kad nađe index od prvo broja 5 u drugom array pa 10-naredba .indexOf(5) će naći index petice
 	}
 	var skupa = Array1.concat(Array2.concat(nadjiduple));
-	console.log(skupa);
+	//console.log(skupa);
 	return skupa;
 }
-var brissi1 = unija(prviArray,drugiArray);
-console.log(brissi1)
+console.log(prviArray);
+console.log(drugiArray);
+var brissi1 = unija(prviArray,drugiArray); // ovo je ustvari glavna funkcija koja poziva sve ostale 
+console.log(brissi1);
 
 function printArray(array){
 	
@@ -37,4 +39,5 @@ function printArray(array){
 	
 }
 
-printArray(unija(prviArray,drugiArray));
+//printArray(unija(prviArray,drugiArray));
+printArray(brissi1);
