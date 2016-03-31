@@ -27,10 +27,8 @@ function getIndexOf(array,what){
 var ddd = getIndexOf(myArray,"cat");
 console.log(ddd);
 
-//myArray.splice(myArray[ddd],1)
-var r = ddd[0];
-var z = ddd[1];
-console.log(z); console.log(r);
+
+
 var nArray=[4, 3, 2, 5, 8, 3, 6, 10];
 nArray.sort(function(a, b){return a-b});
 console.log(nArray);
