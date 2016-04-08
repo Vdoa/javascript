@@ -6,7 +6,11 @@ var house = {
     isGarageOpen: true,
     owner: "Edin",
     location: "Ilidza",
+<<<<<<< HEAD
     
+=======
+	
+>>>>>>> d43cf491defc0b8ae93818a43e1e4e6a99220d65
     openGarage: function(isGarageOpen){
         if(isGarageOpen==true){
             console.log("It's already opened");
@@ -14,18 +18,35 @@ var house = {
         }
         else{
             isGarageOpen = true;
+<<<<<<< HEAD
             return isGarageOpen;
         }
+=======
+			console.log("evo sad ću ih otvoriti!");
+            return isGarageOpen;
+			
+        }
+		
+>>>>>>> d43cf491defc0b8ae93818a43e1e4e6a99220d65
     }
     
     
 }
+<<<<<<< HEAD
 
+=======
+var otvoriVrata = house.openGarage(false); // bez ove linije i linije ispod - kod nije pokazivao poruke za garažu.ZAŠTO?
+console.log(otvoriVrata);    
+>>>>>>> d43cf491defc0b8ae93818a43e1e4e6a99220d65
 var array = [];
 var broj = 3;
 var nesto = function(){};
 function nestodrugo(){};
+<<<<<<< HEAD
 
+=======
+document.write(house.windows)
+>>>>>>> d43cf491defc0b8ae93818a43e1e4e6a99220d65
 // console.log(house.owner);
 // house.owner = "Azra";
 // console.log(house.owner);
